@@ -15,7 +15,7 @@ function changeText403() {
     if (changeText403count == 1){
         changingText403DIV.html("''See, I knew all along,'' says the clown behind you.");
     } if (changeText403count == 2){
-        changingText403DIV.html("You want nothing more than to escape this carnival car from hell,");
+        changingText403DIV.html("You want nothing more than to escape this carnival car from hell");
     } if (changeText403count == 3){
         changingText403DIV.html("until you notice someone who isn't a clown, in the back of the bus.")
     } if (changeText403count == 4){
