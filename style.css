@@ -1,0 +1,136 @@
+body {
+    background-color: black;
+}
+
+img {
+    width: auto;
+    height: 700px;
+  }
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+#choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    font-size: 16px;
+    background-color:#333333;
+    color: white;
+    border-radius:5px;
+    margin: 20px;
+}
+
+.narration {
+    position: absolute;
+    text-align: center;
+    bottom: 8vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: white;
+  }
+
+  #overflow {
+    object-fit: none;
+    height: auto;
+    width: 883px;
+    object-position: 92% 100%;
+  }
+
+  @keyframes reveal {
+    from {
+        width: 883px;
+        object-position: 92% 100%;
+    }
+    to {
+        width: 1216.34px;
+        object-position: 50% 50%;
+    }
+  }
+  
+  .revealAnimate {
+    animation-name: reveal;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+  }
+
+  #clownzoom {
+    object-fit: none;
+    height: auto;
+    width: 1216.34px;
+    object-position: 50% 50%;
+  }
+
+  @keyframes shrink {
+    from {
+      object-fit: none;
+      width: 1216.34px;        
+    }
+    to {
+      object-fit: scale-down;
+      width: 400px;
+    }
+  }
+
+  .shrinkAnimate {
+    animation-name: shrink;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes scaleup {
+    from {
+      transform: translate(-50%, -50%);
+      font-size: 18px;       
+    }
+    to {
+      transform: translate(-50%, +100%);
+      font-size: 160px;
+    }
+  }
+
+  .scaleupAnimate {
+    animation-name: scaleup;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+  }
+
+  #dummy0 {
+    opacity: 0;
+  }
+
+  #dummy {
+    object-fit: none;
+    height: auto;
+    width: 1216.34px;
+    object-position: 50% 50%;
+    opacity: 0;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 100;}
+  }
+
+  .fadeInAnimate {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes erase {
+    from { opacity: 100; }
+    to { opacity: 0;}
+  }
+
+  .eraseAnimate {
+    animation-name: erase;
+    animation-duration: .1s;
+    animation-fill-mode: forwards;
+  }
