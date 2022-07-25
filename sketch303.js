@@ -48,7 +48,7 @@ function showButtons303() {
 }
 
 function openPage300() {
-    window.open("Page300.html", "_self");
+    window.open("page300.html", "_self");
 }
 
 function openPage401() {
