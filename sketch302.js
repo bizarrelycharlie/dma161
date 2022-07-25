@@ -307,5 +307,5 @@ function buttonX() {
 }
 
 function hiddenScene() {
-    window.open("page200.html", "_self");
+    window.open("page500.html", "_self");
 }
